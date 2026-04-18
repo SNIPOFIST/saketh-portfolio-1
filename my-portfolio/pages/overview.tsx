@@ -567,6 +567,93 @@ export default function OverviewPage() {
                     ))}
                   </div>
 
+                  {/* Favourite class */}
+                  <BlogH3>My Favorite Class — IST 688: Human-Centered AI</BlogH3>
+                  <div className="rounded-lg border border-poke-yellow/25 bg-poke-dark/50 p-5 mb-4"
+                    style={{ boxShadow: "0 0 18px rgba(255,215,0,0.06)" }}>
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="text-2xl">🤖</span>
+                      <div>
+                        <p className="font-pokemon text-[0.55rem] text-poke-yellow leading-snug">
+                          IST 688 — Human-Centered Artificial Intelligence
+                        </p>
+                        <p className="font-pokemon text-[0.42rem] text-gray-600 mt-0.5 uppercase tracking-widest">
+                          School of Information Studies · Syracuse University
+                        </p>
+                      </div>
+                    </div>
+                    <BlogP>
+                      Out of every course in the program, IST 688 — Human-Centered Artificial Intelligence
+                      — stands out as my absolute favorite. What made it different from every other class
+                      was the lens it used: instead of asking &quot;how do we build a more accurate
+                      model?&quot; it asked &quot;how do we build AI that actually serves people?&quot;
+                      That shift in framing changed how I think about every technical decision I make.
+                    </BlogP>
+                    <BlogP>
+                      The course pushed me to think beyond benchmarks and into the real-world consequences
+                      of AI systems — who they affect, how they can fail, and what responsibilities
+                      designers and engineers carry. We explored topics like explainability, fairness,
+                      transparency, and trust. I learned that a model that scores 95% accuracy can still
+                      be deeply harmful if it encodes bias or if its users can&apos;t understand or
+                      challenge its decisions.
+                    </BlogP>
+                    <BlogP>
+                      One of the most valuable things I took away was the practice of thinking about
+                      stakeholders before writing a single line of code. Who will use this system? What
+                      do they need to trust it? What happens when it gets it wrong? These questions now
+                      come naturally to me at the start of every project.
+                    </BlogP>
+                    <BlogP>
+                      The course also introduced me to participatory design and human-in-the-loop systems —
+                      the idea that AI should augment human judgment, not replace it. In a world moving
+                      fast toward automation, that principle feels more important than ever. HCAI gave me
+                      the vocabulary and the ethical framework to build AI I&apos;m proud of — not just
+                      AI that works.
+                    </BlogP>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {["Explainability", "Fairness & Bias", "Human-in-the-Loop", "Trust in AI", "Participatory Design", "AI Ethics"].map((tag) => (
+                        <span key={tag} className="rounded-sm border border-poke-yellow/15 bg-poke-dark/60 px-2.5 py-0.5 text-xs text-gray-400 font-mono">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Best parts of the program */}
+                  <BlogH3>The Best Parts of the Program</BlogH3>
+                  <div className="space-y-3 mb-4">
+                    {[
+                      {
+                        emoji: "🔬",
+                        label: "Project-First Learning",
+                        body: "Almost every course was built around real projects, not just exams. That meant the knowledge stuck because it was applied — to real datasets, real problems, real stakeholders.",
+                      },
+                      {
+                        emoji: "🤝",
+                        label: "Collaborative Environment",
+                        body: "Working alongside peers from diverse backgrounds — engineering, business, social sciences — gave every project a richer perspective. The best insights always came from the conversations, not the code.",
+                      },
+                      {
+                        emoji: "🏢",
+                        label: "Industry Connections",
+                        body: "The program created pathways to real-world experience. My Amazon internship came directly out of relationships and preparation built through the iSchool — proof that the program invests in your career, not just your GPA.",
+                      },
+                      {
+                        emoji: "🧠",
+                        label: "Breadth Across the Data Stack",
+                        body: "From raw data collection and SQL to deep learning and NLP — the curriculum covered the full stack of data science. I left knowing not just one slice of the field but how the pieces connect.",
+                      },
+                    ].map((item) => (
+                      <div key={item.label} className="flex items-start gap-4 rounded-lg border border-poke-yellow/10 bg-poke-dark/40 p-4">
+                        <span className="text-xl shrink-0">{item.emoji}</span>
+                        <div>
+                          <p className="font-pokemon text-[0.52rem] text-poke-yellow mb-1">{item.label}</p>
+                          <p className="text-sm text-gray-400 leading-relaxed">{item.body}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
                   {/* What surprised me */}
                   <BlogH3>Biggest Surprises</BlogH3>
                   <div className="grid gap-3 md:grid-cols-2 mb-4">
